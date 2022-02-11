@@ -1,42 +1,32 @@
 ﻿// Задача 10: Показать вторую цифру трёхзначного числа.
 
-//Console.WriteLine(" Введите число");
-//int num = int.Parse(Console.ReadLine());
-//int result = (num / 10)%10;
-//Console.WriteLine(result);
+Console.WriteLine(" Введите число");
+int num = int.Parse(Console.ReadLine());
+int result = (num / 10)%10;
+Console.WriteLine(result);
 
 
 //Задача 12: Удалить вторую цифру трёхзначного числа.
 
-//Console.WriteLine("ВВедите 3-х значное число ");
-//int num = int.Parse(Console.ReadLine());
-//if ( num < 100 || num > 999)
+Console.WriteLine("ВВедите 3-х значное число ");
+int num = int.Parse(Console.ReadLine());
+if ( num < 100 || num > 999)
 {
-   // Console.WriteLine("Неправильно число");
-    //return;
+    Console.WriteLine("Неправильно число");
+    return;
 }
-//int delete = 2;
-//var str = num.ToString();
-//num = int.Parse(str.Remove(str.Length - delete, 1));
-//Console.WriteLine(num);
+int delete = 2;
+var str = num.ToString();
+num = int.Parse(str.Remove(str.Length - delete, 1));
+Console.WriteLine(num);
 
 
 //Задача 14: Найти третью цифру числа или сообщить, что её нет.
 
-//Console.WriteLine("Введите число ");
-//int num = int.Parse(Console.ReadLine());
-//if (num <= 99)
-{
-    //Console.WriteLine("Нет 3 цифры");
-    //return;
-}
-//int result = int.Parse(Convert.ToString(num)[1].ToString());
-//if (result == 0)
-{
-    //Console.WriteLine(" Цифра равна 0 ");
-    //return;
-}
-//Console.WriteLine(result);
+Console.WriteLine("Введите число");
+int num = int.Parse(Console.ReadLine());
+Console.WriteLine(num > 99 ? num.ToString()[2] : "Нет 3 числа");
+Console.ReadKey(true);
 
 
 // Дано число обозначающее день недели. Выяснить является номер дня недели выходным.
